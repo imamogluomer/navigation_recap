@@ -37,10 +37,12 @@ fun FirstScreen(navigateToSecondScreen:(String)->Unit) {
     ) {
         Text("This is the First Screen", fontSize = 24.sp)
         Spacer(modifier = Modifier.height(16.dp))
+        Text("Enter the name:")
         OutlinedTextField(value = name.value, onValueChange = {
             name.value = it
         })
         Spacer(modifier = Modifier.height(16.dp))
+        Text("Enter the age:")
         OutlinedTextField(value = age.value, onValueChange = {
             age.value = it
         })
